@@ -240,6 +240,158 @@
 // for (var i = 0; i < words.length; i++) {
 //   console.log(words[i]);
 // }
+
+// var answer = Math.floor((Math.random() * 100) + 1);
+
+// NASA
+// for (var i = 10; i > 0; i--) {
+//   console.log(i);
+// }
+// console.log("BLASTOFF!!!");
+
+// var numbers = [5, 23, 98, 234, 1, 0, 3, 177];
+// var sum = 0;
+// for (var j = 0; j < numbers.length; j++) {
+//     console.log(numbers[j]);
+//     sum = sum + numbers[j];
+// }
+// console.log(sum / numbers.length);
+
+// FIZZBUZZ!!
+// for (var i = 1; i <= 100; i++) {
+//     if (i % 15 === 0) {
+//         console.log("FIZZBUZZ!!!!");
+//     } else if (i % 5 === 0 ) {
+//         console.log("BUZZ!!!");
+//     } else if (i % 3 === 0) {
+//         console.log("FIZZZ!!!!!");
+//     } else {
+//         console.log(i);
+//     }
+// }
+
+
+// var answer = Math.floor((Math.random() * 100) + 1);
+// var answer = 42;
+// var counter = 0;
+// while (counter < 10 && guess !== answer) {
+//     var guess = parseInt(prompt("Guess a number"));
+//     if (guess > answer) {
+//         alert("Guess lower!");
+//     } else if (guess < answer) {
+//         alert("Guess higher!");
+//     } else {
+//         alert("You've won!");
+//         // break;
+//     }
+//     counter++;
+// }
+
+// RUBY METHOD
+// def say_hello
+//   puts "Hello"
+// end
+// say_hello
+
+// JAVASCRIPT FUNCTION (similar to Ruby methods, but still quite different, as you'll see later on.)
+// function sayHello() {
+//   console.log("Hello!");
+// }
+// sayHello();
+
+// RUBY METHOD WITH PARAMETERS
+// def add_two_numbers(number_one, number_two)
+//   return number_one + number_two
+// end
+// puts add_two_numbers(1, 99)
+
+// JAVASCRIPT FUNCTION WITH PARAMETERS
+// function addTwoNumbers(numberOne, numberTwo) {
+//     return numberOne + numberTwo;
+// }
+// console.log(addTwoNumbers(1, 99));
+
+// RUBY SCOPE
+// x = "hello"
+// def do_something
+//   x = "Zebra"
+// end
+// x.do_something
+// puts x
+
+// JAVASCRIPT SCOPE
+// var x = "hello";
+// function doSomething() {
+//     var x = "Zebra";
+// }
+// doSomething();
+// console.log(x);
+
+// JAVASCRIPT CLASSICAL DEFINITION OF FUNCTION:
+// function cool() {
+//   console.log("A variable can contain a function!");
+// }
+// cool();
+// console.log(typeof cool);
+
+// JAVASCRIPT "FIRST CLASS CITIZEN" FUNCTION
+// var cool = function() {
+//   console.log("A variable can contain a function! SO cool.");
+// };
+// cool();
+// var coolio = 5;
+// console.log(typeof cool);
+// console.log(typeof coolio);
+
+// Functions can also, therefore, be one of the properties of an object
+// var car = {
+//   model: "Buick",
+//   year: 2004,
+//   miles: 20000,
+//   printMessage: function() {
+//     return this.model + " has done " + this.miles + " miles";
+//   }
+// };
+// console.log(car.model);
+// car.year;
+
+// RUBY CLASS:
+// class Car
+//   attr_accessor :model, :year, :miles
+
+//   def initialize(model, year, miles)
+//     @model = model
+//     @year = year
+//     @miles = miles
+//   end
+
+//   def print_message
+//     puts "#{model} has done #{miles} miles"
+//   end
+// end
+
+// civic = Car.new("Honda Civic", 2009, 20000)
+// mondeo = Car.new("Ford Mondeo", 2010, 5000)
+// puts civic
+// puts civic.year
+// puts civic.print_message
+
+// JAVASCRIPT CONSTRUCTORS (the closest thing to Ruby classes)
+function Car(inputmodel, inputyear, inputmiles) {
+  this.model = inputmodel;
+  this.year = inputyear;
+  this.miles = inputmiles;
+  this.printMessage = function() {
+    return this.model + " has done " + this.miles + " miles";
+  };
+}
+
+var civic = new Car("Honda Civic", 2009, 20000);
+var mondeo = new Car("Ford Mondeo", 2010, 5000);
+console.log(civic);
+console.log(civic.year);
+console.log(civic.printMessage());
+
   </script>
 </body>
 </html>
